@@ -1,6 +1,6 @@
 [package]
 name = "satpoint-jsonrpc"
-version = "0.16.0"
+version = "0.16.1"
 authors = ["Andrew Poelstra <apoelstra@wpsoftware.net>"]
 license = "CC0-1.0"
 homepage = "https://github.com/apoelstra/rust-jsonrpc/"
@@ -39,3 +39,7 @@ socks = { version = "0.3.4", optional = true}
 
 [workspace]
 members = ["fuzz", "integration_test"]
+
+[lib]
+name = "jsonrpc"
+path = "src/lib.rs"
